@@ -1,0 +1,17 @@
+.header {
+
+        background-color: var(--header-color);
+        z-index: "1";
+        display: flex !important;
+        color: black;
+
+      
+}
+
+
+.footerClass {
+        bottom: 0;
+        position: fixed;
+        width:100%
+      }
+      
