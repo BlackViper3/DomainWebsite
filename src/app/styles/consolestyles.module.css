@@ -1,0 +1,90 @@
+
+/* CLI prompt starts */
+.promptWrapper {
+  position: relative;
+  padding: 1em;
+  width: 30em;
+}
+.promptRow {
+  display: flex !important;
+  justify-content: space-between !important;
+  padding: 2em;
+  margin: 2em;
+}
+
+#screen {
+  width: 30em;
+  height: 5em;
+
+  margin-top: 2em;
+  background-color: black;
+  color: lawngreen;
+}
+
+.typing {
+    --chwidth: 7;
+    box-sizing: content-box;
+    position: absolute;
+    left: 0;
+    width: calc(var(--chwidth) * 1ch);
+    animation: typing 2s steps(var(--chwidth)) infinite alternate both,
+      blink 1s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 1.5rem;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  
+
+
+@media (max-width: 1250px) {
+  .promptWrapper {
+    position: relative;
+    padding: .50em;
+    width: 20em;
+  
+  }
+  .promptRow {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between !important;
+    padding: 1em;
+    margin: 1em;
+  }
+  
+
+  #screen {
+    width: 20em;
+    height: 2.5em;
+  
+    /* margin-top: 2em; */
+    font-size: 1rem;
+  
+    background-color: black;
+    color: lawngreen;
+  }
+  .typing {
+    --chwidth: 7;
+    box-sizing: content-box;
+    position: absolute;
+    left: 0;
+    width: calc(var(--chwidth) * 1ch);
+    animation: typing 2s steps(var(--chwidth)) infinite alternate both,
+      blink 1s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 1rem;
+  }
+     
+}
+ /* CLI prompt ends */

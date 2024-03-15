@@ -1,0 +1,75 @@
+.quoteContainer * {
+    transition: all 250ms ease-in-out;
+  }
+  
+  .quoteContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin: 2em;
+
+    background-color: black;
+  }
+  .quoteBlock {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 1em;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .quoteBlock {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+  }
+  .quoteBlock .citation {
+    font-size: 2em;
+    line-height: 35px;
+    color: white;
+  }
+  .quoteBlock .author {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 2px;
+    line-height: 35px;
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  
+  .quote {
+    position: relative;
+  }
+  .quote .author {
+    opacity: 0;
+    color: var(--secondary-color);
+    transform: translateY(-50px);
+  }
+  .quote:hover .citation {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  .quote:hover .author {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  
+  @media (max-width: 1250px) {
+   
+  .quoteBlock .citation {
+    font-size: 1em;
+    line-height: 17px;
+    
+  }
+  .quoteBlock .author {
+
+    font-size: 1em;
+    letter-spacing: 1px;
+    line-height: 17px;
+  }
+  }

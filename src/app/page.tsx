@@ -1,19 +1,18 @@
 'use client';
+import HomePageComponent from '@components/HomePageComponent';
 import React from 'react';
+const MainPage = () => {
 
-import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-
-const HomePage = () => {
-
-
+  
   return (
 
     <div>
       <div className="stars" />
       <div className="twinkling" />
+      <HomePageComponent/>
+
     </div>
   )
 }
 
-export default HomePage;
+export default MainPage;
