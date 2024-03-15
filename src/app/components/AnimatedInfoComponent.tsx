@@ -1,11 +1,11 @@
-'use client';
+"use client";
 import React from "react";
-import styles from '@styles/consolestyles.module.css';
+import styles from "@styles/consolestyles.module.css";
 
 const AnimatedInfoConsole = () => {
   return (
     <>
-      <div className="column-6"  id={styles.screen}>
+      <div className="column-6" id={styles.screen}>
         <span className={styles.promptWrapper}>
           [yagzanmanju@work ~]$ whois yagzan
           <div className={styles.promptWrapper}>
@@ -15,7 +15,7 @@ const AnimatedInfoConsole = () => {
           </div>
         </span>
       </div>
-      <div className="column-6"  id={styles.screen}>
+      <div className="column-6" id={styles.screen}>
         <span className={styles.promptWrapper}>
           [yagzanmanju@home ~]$ whois yagzan
           <div className={styles.promptWrapper}>
