@@ -8,7 +8,7 @@ const HomeAboutComponent = () => {
     <div className={`container ${aboutStyles.homeAboutSection}`} id="about">
       <div>
         <div className={aboutStyles.homeAboutDescription}>
-          <h1 className=" text-2xl md:text-4xl">
+          <h1 className=" text-2xl md:text-4xl py-5  md:py-10">
             LET ME{" "}
             <span className={aboutStyles.secondaryColorClass}> INTRODUCE </span>{" "}
             MYSELF
