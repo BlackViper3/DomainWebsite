@@ -1,10 +1,8 @@
 
 .techIconsContainer {
-    position: relative;
-    display: flex;
-    justify-content: space-around !important;
     margin-bottom: 2em;
     padding: 2em;
+    
   }
   
   .techIcons {
@@ -14,6 +12,7 @@
     padding: 10px !important;
     opacity: 0.93 !important;
     border: 1.7px solid var(--secondary-color) !important;
+    justify-self: center;
     vertical-align: middle !important;
     text-align: center !important;
     border-radius: 5px !important;
