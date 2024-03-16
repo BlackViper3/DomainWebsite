@@ -61,3 +61,6 @@ Currently deployed screens are listed below
 - [Skills](https://mystic-ray.surge.sh/about#skills)
 
 
+## Pending Tasks
+- Projects page
+- Deploying to yagzanmanju.com domain
