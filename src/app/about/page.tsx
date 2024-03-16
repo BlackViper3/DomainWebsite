@@ -27,9 +27,9 @@ const About = () => {
               </span>{" "}
             </h1>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-2 ">
             <div
-              className={`${aboutStyles.homeAboutBody} p-5 justify-self-center self-center`}
+              className={`${aboutStyles.homeAboutBody} ${aboutStyles.aboutContent} p-5 justify-self-center self-center`}
             >
               I am from
               <b className={aboutStyles.secondaryColorClass}>
@@ -64,13 +64,13 @@ const About = () => {
               mesmerizing as they say.
             </div>
             <div
-              className={`${aboutStyles.homeAboutBody} p-5 justify-self-center self-center`}
-              id={aboutStyles.aboutGraphic}
+              className={`${aboutStyles.homeAboutBody}  p-5 justify-self-center self-center`}
+              
             >
               <Image
                 src={AboutImage}
+                className={aboutStyles.aboutGraphic}
                 alt="Yagzan"
-                // className=""
               />
             </div>
           </div>

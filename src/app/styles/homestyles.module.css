@@ -96,9 +96,12 @@
   text-align: left;
 }
 
-#aboutGraphic{
-    height: 250px;
+.aboutGraphic{
+    height: 300px;
     width: 400px;
+}
+.aboutContent{
+  height: 300px;
 }
 
 
@@ -148,9 +151,12 @@
     font-size: 1em !important;
     text-align: center;
   }
-  #aboutGraphic{
-    height: 100px;
+  .aboutGraphic{
+    height:150px;
     width: 200px;
     padding:20px;
-}
+  }
+  .aboutContent{
+    height: 150px;
+  }
 }
