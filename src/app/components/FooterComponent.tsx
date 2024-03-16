@@ -7,9 +7,13 @@ const Footer = () => {
     <div className={styles.footerClass} id="nnn">
       <footer className="footer footer-center p-5 bg-base-200 text-base-content rounded">
         <nav className="grid grid-flow-col gap-4">
-          <Link href="#about" className="link link-hover">
+          <Link href="/about" className="link link-hover">
             About
           </Link>
+          <Link href="/" className="link link-hover">
+            Home
+          </Link>
+
           <a className="link link-hover">Contact</a>
           <a className="link link-hover">Jobs</a>
           <a className="link link-hover">Press kit</a>
