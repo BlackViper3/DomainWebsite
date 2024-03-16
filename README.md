@@ -58,6 +58,6 @@ Currently deployed screens are listed below
 
 - [Home](https://mystic-ray.surge.sh/) 
 - [About](https://mystic-ray.surge.sh/about)
-- [Skills](https://mystic-ray.surge.sh/skills)
+- [Skills](https://mystic-ray.surge.sh/about#skills)
 
 
