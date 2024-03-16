@@ -25,11 +25,9 @@ import {
 import techIconStyles from "@styles/techiconstyles.module.css";
 import { IconType } from "react-icons";
 
-const IconComponent: React.FC<{ icon: IconType; key: string }> = (
-  props
-) => {
+const IconComponent: React.FC<{ icon: IconType; key: string }> = (props) => {
   return (
-    <div className="tooltip tooltip-bottom"  data-tip={props.key}>
+    <div className="tooltip tooltip-bottom" data-tip={props.key}>
       <div className={` ${techIconStyles.techIcons} `}>
         <props.icon />
       </div>
@@ -38,7 +36,7 @@ const IconComponent: React.FC<{ icon: IconType; key: string }> = (
 };
 
 const SkillsComponent: React.FC<{ className?: string }> = () => {
-  [DiJava].map((icon) => <IconComponent  icon={icon} key={icon.name} />);
+  [DiJava].map((icon) => <IconComponent icon={icon} key={icon.name} />);
 
   return (
     <div className="grid place-content-center">
@@ -61,12 +59,9 @@ const SkillsComponent: React.FC<{ className?: string }> = () => {
           DiMongodb,
           DiMysql,
           DiPostgresql,
-          DiRedis
+          DiRedis,
         ].map((icon) => (
-          <IconComponent
-            icon={icon}
-            key={icon.name.replace(/Di|Si/g, "")}
-          />
+          <IconComponent icon={icon} key={icon.name.replace(/Di|Si/g, "")} />
         ))}
       </div>
     </div>
