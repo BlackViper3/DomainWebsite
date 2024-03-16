@@ -29,7 +29,7 @@ const About = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-2 ">
             <div
-              className={`${aboutStyles.homeAboutBody} ${aboutStyles.aboutContent} p-5 justify-self-center self-center`}
+              className={`${aboutStyles.homeAboutBody} p-5 justify-self-center self-center`}
             >
               I am from
               <b className={aboutStyles.secondaryColorClass}>
