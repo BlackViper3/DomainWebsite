@@ -6,7 +6,7 @@
   }
   
   .techIcons {
-    font-size: 4.5em !important;
+    font-size: 7em !important;
     margin: 15px !important;
     color: white;
     padding: 10px !important;
@@ -25,6 +25,7 @@
   @media (max-width: 767px) {
     .techIcons {
       margin: 10px !important;
+      font-size: 3em !important;
     }
   }
   

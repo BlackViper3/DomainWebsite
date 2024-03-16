@@ -91,11 +91,13 @@ const About = () => {
           </h1>
         </div>
         <SkillsComponent className={aboutStyles.homeHeaderContainer} />
-        <h1 className={aboutStyles.aboutHeading}>
-          <b className={aboutStyles.secondaryColorClass}> Tools I use</b>
-        </h1>
+        <div className={aboutStyles.homeAboutDescription}>
+          <h1 className="text-2xl md:text-4xl py-5  md:py-10">
+            <b className={aboutStyles.secondaryColorClass}> Tools I use</b>
+          </h1>
+        </div>
 
-        {/* <ToolsComponent className="home-tile-container" /> */}
+        <ToolsComponent className={aboutStyles.homeAboutDescription} />
       </div>
     </>
   );
