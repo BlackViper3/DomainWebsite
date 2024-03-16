@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This repository consists of a Next.js project which houses code for Domain website.
 
-## Getting Started
+## Directory Structure
 
-First, run the development server:
+Directory structure is similar to project created using create-next-app.
 
+Notable folders are listed below
+
+- **src/app**           - Root directory
+- **src/app/assets**    - Assets directory
+- **src/app/componets**    - Reusable component files directory
+- **src/app/styles**    - Directory for styles
+- **src/app/types**    - Directory for types
+
+## Local Deployment steps
+
+Following commands are valid
+1. Run the deployment server
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the website.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. Run prettier
+```bash
+npm run prettier
+```
+Pretifies all the files in the src/ directory
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Run Build
+```bash
+npm run build
+```
+Builds and pushes the output to out directory
 
-## Learn More
+4. Deploy to Surge
+```bash
+npx surge out
+```
+Surge is usually installed  globally and can be used to deploy to a ready-made site in surge.sh domain. 
 
-To learn more about Next.js, take a look at the following resources:
+This deploys files in out directory and would request authentication on initial execution.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deployed on Surge
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deployed using Surge.sh
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Temporarily deployed as static site in  [yagzanmanju.com] (https://mystic-ray.surge.sh/)
+- Documentation can be found in the below links 
+    * https://bharathvaj.me/blog/nextjs-surge
+    * https://surge.sh/
+### Available Screens
+
+Currently deployed screens are listed below
+
+- [Home](https://mystic-ray.surge.sh/) 
+- [About](https://mystic-ray.surge.sh/about)
+- [Skills](https://mystic-ray.surge.sh/skills)
+
+
