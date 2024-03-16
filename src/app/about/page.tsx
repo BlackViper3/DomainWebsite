@@ -16,7 +16,7 @@ const About = () => {
     <div>
       <div className="stars" />
       <div className="twinkling" />
-      <div className="container p-3 grid grid-cols-1 bg-opacity-0 md:grid-cols-2 md:gap-2 justify-items-center align-items-center">
+      <div className="container">
         <div className={`${aboutStyles.homeAboutSection} container`} id="about">
           <div className={aboutStyles.homeAboutDescription}>
             <h1 className="text-2xl md:text-4xl py-5  md:py-10">
@@ -82,7 +82,7 @@ const About = () => {
           />
         </div>
 
-        <div className={aboutStyles.homeAboutDescription}>
+        <div className={aboutStyles.homeAboutDescription} id="skills">
           <h1 className="text-2xl md:text-4xl py-5  md:py-10">
             <b className={aboutStyles.secondaryColorClass}>
               {" "}

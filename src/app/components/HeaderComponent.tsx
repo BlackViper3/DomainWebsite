@@ -38,18 +38,7 @@ const Header = () => {
               <a>Projects</a>
             </li>
             <li>
-              <a>Skils</a>
-              <ul className="p-2">
-                <li>
-                  <a>Frontend</a>
-                </li>
-                <li>
-                  <a>Backend</a>
-                </li>
-                <li>
-                  <a>DevOps</a>
-                </li>
-              </ul>
+            <Link href="/about#skills">Skills</Link>
             </li>
           </ul>
         </div>
@@ -81,17 +70,7 @@ const Header = () => {
             <a>Projects</a>
           </li>
           <li>
-            <details>
-              <summary>Skills</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Frontend</a>
-                </li>
-                <li>
-                  <a>Backend</a>
-                </li>
-              </ul>
-            </details>
+          <Link href="/about#skills">Skills</Link>
           </li>
         </ul>
       </div>
