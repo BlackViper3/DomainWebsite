@@ -43,7 +43,7 @@ const About = () => {
               from St.Joseph's College of Engineering, Chennai.
               <br />
               <div
-                className="tooltip-bottom"
+                className="tooltip tooltip-right"
                 data-tip="To us all towns are our own, everyone our kin"
               >
                 <b
@@ -65,13 +65,12 @@ const About = () => {
             </div>
             <div
               className={`${aboutStyles.homeAboutBody} p-5 justify-self-center self-center`}
+              id={aboutStyles.aboutGraphic}
             >
-              <Image
+              <Image  
                 src={AboutImage}
-                height={250}
-                width={400}
                 alt="Yagzan"
-            
+                // className=""
               />
             </div>
           </div>
@@ -82,18 +81,19 @@ const About = () => {
             author="Nancy H. Kleinbaum"
           />
         </div>
-        {/*
-        <h1 className={aboutStyles.aboutHeading}>
+        
+        <div className={aboutStyles.homeAboutDescription}>
+            <h1 className="text-2xl md:text-4xl py-5  md:py-10">
           <b className={aboutStyles.secondaryColorClass}> Professional Armoury</b>
         </h1>
-        
+        </div>
          <SkillsComponent className={aboutStyles.homeHeaderContainer} />
         <h1 className={aboutStyles.aboutHeading}>
           <b className={aboutStyles.secondaryColorClass}> Tools I use</b>
         </h1>
 
-        <ToolsComponent className="home-tile-container" />
-  */}
+        {/* <ToolsComponent className="home-tile-container" /> */}
+  
       </div>
     </>
   );

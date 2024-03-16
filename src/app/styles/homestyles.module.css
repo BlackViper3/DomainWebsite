@@ -96,6 +96,12 @@
   text-align: left;
 }
 
+#aboutGraphic{
+    height: 250px;
+    width: 400px;
+}
+
+
 @media (max-width: 1250px) {
   .homeHeaderContainer {
     padding: 10px !important;
@@ -142,4 +148,9 @@
     font-size: 1em !important;
     text-align: center;
   }
+  #aboutGraphic{
+    height: 100px;
+    width: 200px;
+    padding:20px;
+}
 }
