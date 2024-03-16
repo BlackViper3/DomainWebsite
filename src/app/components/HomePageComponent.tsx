@@ -10,7 +10,7 @@ import Image from "next/image";
 import DeveloperSvg from "@assets/Developer.svg";
 import QuoteComponent from "@components/QuoteComponent";
 import AnimatedInfoConsole from "@components/AnimatedInfoComponent";
-import HomeAboutComponent from "@components/HomeAboutComponent";
+import IntroComponent from "@components/IntroComponent";
 
 const HomePageComponent = () => {
   useEffect(() => {
@@ -81,7 +81,7 @@ const HomePageComponent = () => {
         author="Batman"
       />
 
-      <HomeAboutComponent />
+      <IntroComponent />
 
       <div className={consoleStyles.promptRow}>
         <AnimatedInfoConsole />

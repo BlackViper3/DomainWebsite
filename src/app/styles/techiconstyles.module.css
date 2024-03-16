@@ -1,0 +1,42 @@
+
+.techIconsContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-around !important;
+    margin-bottom: 2em;
+    padding: 2em;
+  }
+  
+  .techIcons {
+    font-size: 4.5em !important;
+    margin: 15px !important;
+    color: white;
+    padding: 10px !important;
+    opacity: 0.93 !important;
+    border: 1.7px solid var(--secondary-color) !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+    border-radius: 5px !important;
+    display: table !important;
+    box-shadow: 4px 5px 4px 3px var(--secondary-color) !important;
+    overflow: hidden !important;
+    transition: all 0.4s ease 0s !important;
+  }
+  
+  @media (max-width: 767px) {
+    .techIcons {
+      margin: 10px !important;
+    }
+  }
+  
+  .techIcons:hover {
+    transform: scale(1.05) !important;
+    overflow: hidden !important;
+    border: 2.2px solid var(--secondary-color) !important;
+    color: burlywood;
+  }
+  .techIconImages {
+    padding: 20px !important;
+    line-height: 1.6 !important;
+  }
+  

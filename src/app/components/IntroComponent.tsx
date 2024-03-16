@@ -3,12 +3,12 @@ import React from "react";
 import aboutStyles from "@styles/homestyles.module.css";
 import Image from "next/image";
 import YagzanProfilePic from "@assets/YagzanProfilePic.svg";
-const HomeAboutComponent = () => {
+const IntroComponent = () => {
   return (
     <div className={`container ${aboutStyles.homeAboutSection}`} id="about">
       <div>
         <div className={aboutStyles.homeAboutDescription}>
-          <h1 className=" text-2xl md:text-4xl py-5  md:py-10">
+          <h1 className="text-2xl md:text-4xl py-5  md:py-10">
             LET ME{" "}
             <span className={aboutStyles.secondaryColorClass}> INTRODUCE </span>{" "}
             MYSELF
@@ -58,4 +58,4 @@ const HomeAboutComponent = () => {
     </div>
   );
 };
-export default HomeAboutComponent;
+export default IntroComponent;
