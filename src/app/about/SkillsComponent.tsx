@@ -1,5 +1,4 @@
 import React from "react";
-import { CgCPlusPlus } from "react-icons/cg";
 
 import {
   DiJavascript1,
@@ -18,30 +17,19 @@ import {
 import {
   SiC,
   SiSpring,
-  SiExpress,
   SiNextdotjs,
   SiFlutter,
 } from "react-icons/si";
 import techIconStyles from "@styles/techiconstyles.module.css";
-import { IconType } from "react-icons";
+import IconComponent from "./IconComponent";
 
-const IconComponent: React.FC<{ icon: IconType; key: string }> = (props) => {
-  return (
-    <div className="tooltip tooltip-bottom" data-tip={props.key}>
-      <div className={` ${techIconStyles.techIcons} `}>
-        <props.icon />
-      </div>
-    </div>
-  );
-};
 
 const SkillsComponent: React.FC<{ className?: string }> = () => {
-  [DiJava].map((icon) => <IconComponent icon={icon} key={icon.name} />);
 
   return (
     <div className="grid place-content-center">
       <div
-        className={`grid grid-cols-2 md:grid-cols-4 ${techIconStyles.techIconsContainer}`}
+        className={`grid grid-cols-2 gap-4 md:grid-cols-4 ${techIconStyles.techIconsContainer}`}
       >
         {[
           DiJava,
@@ -61,7 +49,7 @@ const SkillsComponent: React.FC<{ className?: string }> = () => {
           DiPostgresql,
           DiRedis,
         ].map((icon) => (
-          <IconComponent icon={icon} key={icon.name.replace(/Di|Si/g, "")} />
+          <IconComponent icon={icon} key={icon.name} dataTip={icon.name.replace(/Di|Si|AiFill/g, "")} />
         ))}
       </div>
     </div>
