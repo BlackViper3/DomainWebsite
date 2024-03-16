@@ -13,10 +13,10 @@ const tamilFont = Noto_Serif_Tamil({
 
 const About = () => {
   return (
-    <>
+    <div>
       <div className="stars" />
       <div className="twinkling" />
-      <div className="container">
+      <div className="container p-3 grid grid-cols-1 bg-opacity-0 md:grid-cols-2 md:gap-2 justify-items-center align-items-center">
         <div className={`${aboutStyles.homeAboutSection} container`} id="about">
           <div className={aboutStyles.homeAboutDescription}>
             <h1 className="text-2xl md:text-4xl py-5  md:py-10">
@@ -40,10 +40,10 @@ const About = () => {
               <b className={aboutStyles.secondaryColorClass}>
                 Computer Science Engineering Graduate{" "}
               </b>
-              from St.Joseph's College of Engineering, Chennai.
+              from St.Joseph&apos;s College of Engineering, Chennai.
               <br />
               <div
-                className="tooltip tooltip-right"
+                className="tooltip tooltip-bottom md:tooltip-right"
                 data-tip="To us all towns are our own, everyone our kin"
               >
                 <b
@@ -99,7 +99,7 @@ const About = () => {
 
         <ToolsComponent className={aboutStyles.homeAboutDescription} />
       </div>
-    </>
+    </div>
   );
 };
 export default About;
