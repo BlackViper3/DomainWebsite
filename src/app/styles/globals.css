@@ -3,22 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --secondary-color: #946b2d;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --header-color: white;
-    --footer-color: white;
-    --primary-color: #ffffff;
-    --secondary-color: #946b2d;
-  }
+[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-fg: #000000;
+  --secondary-color: #946b2d;
+}
+
+[data-theme="dark"] {
+  --color-bg: #000000;
+  --color-fg: #ffffff;
+  --secondary-color: #946b2d;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
- }
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+  transition: color 0.4s, background-color 0.4s;
+  /* light-dark(rgb(var(--foreground-rgb)),rgb(var(--foreground-rgb))); */
+}
 
 @layer utilities {
   .text-balance {
@@ -26,6 +33,63 @@ body {
   }
 }
 
+/*
+Dark theme - start
+*/
+.lightDarkModeToggle{
+  position: absolute;
+  opacity: 0;
+}
+.lightDarkModeToggleLabel{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height:26px;
+  width:60px;
+  padding: 4px;
+  position: relative;
+  background-color: #000;
+  border-radius:50px;
+  
+}
+.lightDarkModeBall{
+  height:22px;
+    width:22px;
+  background-color:#fff;
+  border-radius:50px;
+  position:absolute;
+  transition: transform .2s linear;
+}
+
+
+.lightDarkModeToggle:checked + .lightDarkModeToggleLabel .lightDarkModeBall{
+transform:translateX(30px);
+
+}
+
+/*
+Dark theme - end
+*/
+
+
+
+.support {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+.support a {
+  color: #292c35;
+  font-size: 32px;
+  backface-visibility: hidden;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.support a:hover{
+  transform: scale(1.1);
+}
 
  /* Star background starts */
 .stars,

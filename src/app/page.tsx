@@ -4,8 +4,6 @@ import React from "react";
 const MainPage = () => {
   return (
     <div>
-      <div className="stars" />
-      <div className="twinkling" />
       <HomePageComponent />
     </div>
   );

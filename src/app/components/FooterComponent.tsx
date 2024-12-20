@@ -102,9 +102,6 @@ const Footer = () => {
             </a>
           </div>
         </nav>
-        <aside>
-          <p>Design manivannan.design</p>
-        </aside>
       </footer>
     </div>
   );

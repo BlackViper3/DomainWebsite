@@ -1,8 +1,19 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import '@styles/globals.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSun,faMoon, faS } from '@fortawesome/free-solid-svg-icons'
+
 
 const Header = () => {
+  const [darkMode,setDarkMode] = useState(false);
+
+  const handleDarkMode = (event: React.ChangeEvent<HTMLInputElement>) =>{
+    var theme = event.target.checked ? 'light' : 'dark';
+    document.querySelector("html")?.setAttribute("data-theme", theme);
+    // color-scheme
+  };
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -74,7 +85,17 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      <div className="navbar-end"></div>
+      <div className="navbar-end">
+      <div>
+        <input type="checkbox"  onChange={(e)=>handleDarkMode(e)} className="lightDarkModeToggle" id="lightDarkModeToggle"/>
+        <label htmlFor="lightDarkModeToggle" className="lightDarkModeToggleLabel">
+        <FontAwesomeIcon icon={faSun} />
+        <FontAwesomeIcon icon={faMoon} />
+          <span className="lightDarkModeBall"></span>
+        </label>
+        
+      </div>
+      </div>
     </div>
   );
 };
